@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add your additional styles here */
+        .content_between_sidebar_and_topnav {
+            display: none; /* Hide content sections by default */
+            padding: 20px; /* Add padding for better visibility */
+        }
+    </style>
+    
+   
+</head>
+<body>
+
+    <div class="wrapper">
+        <!--Top menu -->
+        <!--menu item icon-->
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div class="menu_items">
+                    <a href="#" onclick="showContent('content_home')">Home</a>
+                    <a href="#" onclick="showContent('content_about')">About</a>
+                    <a href="#" onclick="showContent('content_services')">Services</a>
+                    <a href="#" onclick="showContent('content_contact')">Contact</a>
+                    <!-- Add more menu items as needed -->
+                </div>
+                
+                <div class="chart_icon" title="Sales Chart">
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <!--profile image & text-->
+            <div class="profile">
+                <img src="img/avatar.jpg" alt="profile_picture">
+                <h3>BemPhynix</h3>
+                <p>Coder</p>
+            </div>
+            <!--menu item -->
+            <ul>
+                
+                <li>
+                    <a href="#" onclick="showContent('content_dashboard')">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#" onclick="showContent('content_performance')">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Perfomance</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" onclick="showContent('content_reports')">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#" onclick="showContent('content_settings')">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- Content Sections -->
+        <div class="content_between_sidebar_and_topnav" id="content_home">
+            <!-- Content for the 'Home' menu item goes here -->
+            <p>This is the Home content.</p>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="img/service1.png" alt="Slide 1" class="active">
+                    <img src="img/service2.png" alt="Slide 2">
+                    <img src="img/service3.png" alt="Slide 3">
+                    <!-- Add more slides as needed -->
+                </div>
+                <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+                <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <!-- End Image Slider -->
+        </div>
+    <!--Content Sections -->
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_about">
+            <!-- Content for the 'About' menu item goes here -->
+            <p>This is the About content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_services">
+            <!-- Content for the 'Services' menu item goes here -->
+            <p>This is the Services content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_contact">
+            <!-- Content for the 'Contact' menu item goes here -->
+            <p>This is the Contact content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_dashboard">
+            <!-- Content for the 'My Dashboard' menu item goes here -->
+            <p>This is the Dashboard content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_performance">
+            <!-- Content for the 'Performance' menu item goes here -->
+            <p>This is the Performance content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_reports">
+            <!-- Content for the 'Reports' menu item goes here -->
+            <p>This is the Reports content.</p>
+        </div>
+        <div class="content_between_sidebar_and_topnav" id="content_settings">
+            <!-- Content for the 'Settings' menu item goes here -->
+            <p>This is the Settings content.</p>
+        </div>
+        <!-- End Content Sections -->
+    </div>
+    <script src="js/slider3.js" type="text/javascript"></script>
+  <script>
+      function showContent(contentId) {
+        // Hide all content sections
+        var contentSections = document.querySelectorAll('.content_between_sidebar_and_topnav');
+        contentSections.forEach(function (section) {
+            section.style.display = 'none';
+        });
+
+        // Show the clicked content section
+        var selectedContent = document.getElementById(contentId);
+        if (selectedContent) {
+            selectedContent.style.display = 'block';
+        }
+      }
+
+      var hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function(){
+          document.querySelector("body").classList.toggle("active");
+      });
+  </script>
+</body>
+</html>
