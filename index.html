@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/service.css">
+
     <link rel="stylesheet" href="css/all.min.css">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
     <meta charset="UTF-8">
@@ -15,7 +18,35 @@
             padding: 20px; /* Add padding for better visibility */
         }
     </style>
+     <style>
     
+        .welcome-section {
+            text-align: center;
+            padding: 50px;
+        }
+        .welcome-message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #080808;
+            animation: slideIn 3s ease-out; /* Add slide-in animation */
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #060606;
+        }
+    </style>
    
 </head>
 <body>
@@ -38,9 +69,14 @@
                     <!-- Add more menu items as needed -->
                 </div>
                 
-                <div class="chart_icon" title="Sales Chart">
+                <!-- <div class="chart_icon" title="Sales Chart">
                     <a href="#">
                         <i class="fas fa-chart-bar"></i>
+                    </a>
+                </div> -->
+                <div class="chart_icon" title="Shopping Cart">
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
                     </a>
                 </div>
             </div>
@@ -61,21 +97,7 @@
                         <span class="icon"><i class="fas fa-desktop"></i></span>
                         <span class="item">My Dashboard</span>
                     </a>
-                </li>
-               
-                <li>
-                    <a href="#" onclick="showContent('content_performance')">
-                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                        <span class="item">Perfomance</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#" onclick="showContent('content_reports')">
-                        <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">Reports</span>
-                    </a>
-                </li>
+                </li>           
                
                 <li>
                     <a href="#" onclick="showContent('content_settings')">
@@ -89,7 +111,14 @@
         <!-- Content Sections -->
         <div class="content_between_sidebar_and_topnav" id="content_home">
             <!-- Content for the 'Home' menu item goes here -->
-            <p>This is the Home content.</p>
+            <div class="beautiful-div">
+                <div class="welcome-message">Welcome to Our E-Commerce Store!</div>
+                <div class="intro-text">
+                    Explore a world of incredible products and discover the perfect items tailored just for you.
+                    We're passionate about bringing you the best shopping experience with a wide range of high-quality
+                    products, excellent customer service, and hassle-free delivery. Happy shopping!
+                </div>
+            </div>
             <div class="slider-container">
                 <div class="slider">
                     <img src="img/service1.png" alt="Slide 1" class="active">
@@ -101,20 +130,113 @@
                 <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
             </div>
             <!-- End Image Slider -->
-        </div>
+            <div class="beautiful-div">all rights reserved @Bemgba</div>
+         </div>
     <!--Content Sections -->
+    
         </div>
         <div class="content_between_sidebar_and_topnav" id="content_about">
             <!-- Content for the 'About' menu item goes here -->
-            <p>This is the About content.</p>
+            <div class="beautiful-div">
+                <div class="welcome-message">Welcome! Interesting Notes About Us</div>
+                <div class="intro-text">
+                    <section>
+                        <h2>Our Story</h2>
+                        <p>Welcome to [Your Company Name], where innovation meets excellence. Our journey began with a simple idea: to [describe your initial goal or purpose]. Since then, we have grown into [mention any milestones, achievements, or expansions].</p>
+                
+                        <h2>Our Mission</h2>
+                        <p>At [Your Company Name], our mission is to [state your mission]. We are committed to [describe your commitment and values]. Through [your products/services], we aim to [impact or benefit].</p>
+                
+                        <h2>What Sets Us Apart</h2>
+                        <p>What makes [Your Company Name] unique is our unwavering dedication to [specific qualities, values, or aspects that set you apart]. We believe in [core beliefs] and strive to [how you make a difference].</p>
+                
+                        <h2>Meet the Team</h2>
+                        <p>[Your Company Name] is powered by a team of passionate and skilled professionals. Our diverse team brings together expertise from various fields, ensuring that we deliver nothing but the best to our customers.</p>
+                
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions or would like to connect with us, feel free to reach out. We value your feedback and look forward to hearing from you. You can contact us [provide contact details or a link to your contact page].</p>
+                    </section>
+                
+                    <!-- Footer Section -->
+                    <footer>
+                        <!-- Add your footer content or links if needed -->
+                        <p>&copy; 2023 Bemgba. All rights reserved.</p>
+                    </footer>
+                </div>
+            </div>
         </div>
-        <div class="content_between_sidebar_and_topnav" id="content_services">
+        <!-- <div class="content_between_sidebar_and_topnav" id="content_services"> -->
             <!-- Content for the 'Services' menu item goes here -->
-            <p>This is the Services content.</p>
+            <!-- <p>This is the Services content.</p>
+        </div> -->
+        
+            <div class="content_between_sidebar_and_topnav" id="content_services">
+                <div class="beautiful-div">
+                    <h2>Our Services</h2>
+                
+                    <div class="service-card">
+                        <h3>Product Listings</h3>
+                        <p>Displaying a wide range of products with detailed descriptions, images, and prices.</p>
+
+                
+                    <div class="service-card">
+                        <h3>Security Measures</h3>
+                        <p>Implementing robust security measures to protect customer data and ensure safe transactions.</p>
+                    </div>
+                
+                    <div class="service-card">
+                        <h3>Shipping and Delivery</h3>
+                        <p>Offering various shipping options and providing accurate delivery estimates.
+                            Returns and Refunds: Establishing a clear and customer-friendly return policy with options for refunds or exchanges.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Customer Support</h3>
+                        <p> Providing responsive customer support through live chat, email, or phone to assist with inquiries and issues.</p>
+                    </div>
+            </div>
+            </div> 
+            
         </div>
         <div class="content_between_sidebar_and_topnav" id="content_contact">
             <!-- Content for the 'Contact' menu item goes here -->
+      <div class="beautiful-div">
+            <h2>Contact Us</h2>
+    
+            <p>We would love to hear from you! If you have any questions, feedback, or inquiries, feel free to get in touch with us using the contact information below:</p>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Main Street, Cityville, Country</p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>Email: info@example.com</p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+    </div>
+
+    <p>Alternatively, you can use the contact form below to send us a message:</p>
+
+    <form action="#" method="post" class="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
             <p>This is the Contact content.</p>
+      </div>
         </div>
         <div class="content_between_sidebar_and_topnav" id="content_dashboard">
             <!-- Content for the 'My Dashboard' menu item goes here -->

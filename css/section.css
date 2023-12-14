@@ -1,0 +1,73 @@
+/* Style for the section */
+.p-top-100 {
+    padding-top: 100px; /* Adjust top padding as needed */
+}
+
+.p-bottom-95 {
+    padding-bottom: 95px; /* Adjust bottom padding as needed */
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.section_title {
+    margin-bottom: 40px; /* Adjust the space below the title */
+}
+
+.section_title h1 {
+    font-size: 36px; /* Adjust the font size of the title */
+    color: #333; /* Set the color of the title */
+}
+
+/* Style for the portfolio carousel */
+.portfolio-carousel-single {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: Add rounded corners to the portfolio items */
+}
+
+.portfolio-carousel-single figure {
+    margin: 0;
+}
+
+.portfolio-carousel-single img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the portfolio images */
+}
+
+.portfolio-carousel-single figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background to the captions */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px; /* Optional: Add rounded corners to the captions */
+}
+
+.portfolio-carousel-single h5 {
+    font-size: 24px; /* Adjust the font size of the caption title */
+    margin-bottom: 5px;
+}
+
+.portfolio-carousel-single .color-secondary {
+    color: #ff6600; /* Set the color of the secondary text */
+    font-size: 14px; /* Adjust the font size of the secondary text */
+    margin-bottom: 15px;
+}
+
+.portfolio-carousel-single .link {
+    color: #333; /* Set the color of the link */
+    font-size: 18px; /* Adjust the font size of the link icon */
+}
+
+.portfolio-carousel-single .link:hover {
+    color: #ff6600; /* Set the hover color of the link */
+}

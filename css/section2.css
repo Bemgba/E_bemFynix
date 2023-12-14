@@ -1,0 +1,58 @@
+/* Style for the portfolio carousel */
+.portfolio-carousel {
+    width: 100%;
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.portfolio-carousel-single {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Set the height of the carousel items */
+    border-radius: 8px; /* Optional: Add rounded corners to the portfolio items */
+}
+
+.portfolio-carousel-single figure {
+    margin: 0;
+}
+
+.portfolio-carousel-single img {
+    width: 100%;
+    height: 100%; /* Make the image fill the entire carousel item */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire area */
+    border-radius: 8px; /* Optional: Add rounded corners to the portfolio images */
+}
+
+.portfolio-carousel-single figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background to the captions */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px; /* Optional: Add rounded corners to the captions */
+}
+
+.portfolio-carousel-single h5 {
+    font-size: 24px; /* Adjust the font size of the caption title */
+    margin-bottom: 5px;
+}
+
+.portfolio-carousel-single .color-secondary {
+    color: #ff6600; /* Set the color of the secondary text */
+    font-size: 14px; /* Adjust the font size of the secondary text */
+    margin-bottom: 15px;
+}
+
+.portfolio-carousel-single .link {
+    color: #333; /* Set the color of the link */
+    font-size: 18px; /* Adjust the font size of the link icon */
+}
+
+.portfolio-carousel-single .link:hover {
+    color: #ff6600; /* Set the hover color of the link */
+}

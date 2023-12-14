@@ -1,0 +1,31 @@
+ /* Add your additional styles here */
+ .content_between_sidebar_and_topnav {
+    display: none;
+    padding: 20px;
+    text-align: center; /* Align text to the center */
+}
+
+.content_between_sidebar_and_topnav h2 {
+    font-size: 28px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.service-card {
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666; /* Gray text color */
+}

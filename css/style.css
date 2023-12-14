@@ -233,5 +233,24 @@ body.active .wrapper .section{
     grid-column: 3;
     grid-row: 1;
 }
+/* style welcome*/
+.content_between_sidebar_and_topnav p {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color */
+    font-weight: bold; /* Make the text bold if desired */
+    text-align: center; /* Align the text to the center */
+    margin-bottom: 20px; /* Add margin at the bottom for better spacing */
+}
 
-
+.beautiful-div {
+    background-color: #a7a7ab;
+    color: #070707;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Add this line to center the div */
+    text-align: center; /* Center the text inside the div */
+    padding: 20px; /* Add padding for better visibility */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-left: 16%; /* Add a left margin to create space from the sidebar */
+}
